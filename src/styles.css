@@ -1,25 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
-.bg-custom{
-    background-image: linear-gradient(15deg, #d32f2f 0%, #d08080 100%);
+.bg-custom {
+    background-image: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
 }
 
 .btn {
     flex: 1 1 auto;
-    padding: 10px;
+    padding: 10px 24px;
     text-align: center;
     text-transform: uppercase;
-    transition: 0.5s;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    transition: 0.3s ease;
     background-size: 200% auto;
     color: white;
-    box-shadow: 0 0 20px #eee;
+    box-shadow: 0 4px 14px rgba(63, 94, 251, 0.35);
     border-radius: 10px;
-    border: 1px solid #d32f2f !important;
+    border: none !important;
 }
 
 .btn-4 {
-    background-image: linear-gradient(to right, #d08080 0%, #fbc2c2 51%, #d32f2f 100%);
+    background-image: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
 }
 
 .btn:hover {
     background-position: right center;
+    box-shadow: 0 6px 20px rgba(252, 70, 107, 0.45);
+    transform: translateY(-1px);
+}
+
+.chart-title {
+    font-weight: 700;
+    background-image: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.chart-divider {
+    height: 3px;
+    border: none;
+    border-radius: 3px;
+    background-image: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
 }

@@ -1,10 +1,10 @@
-<h3 class="m-3"> Grafico de Radar</h3>
-<hr>
+<h3 class="m-3 chart-title">Grafico de Radar</h3>
+<hr class="chart-divider">
 <div class="row">
     <div class="col-sm-6 mx-auto">
         <div>
-            <canvas baseChart width="400" height="400" [datasets]="radarChartData" [options]="radarChartOptions" [labels]="radarChartLabels" [chartType]="radarChartType"></canvas>
+            <canvas baseChart width="400" height="400" [data]="radarChartData" [options]="radarChartOptions" [type]="radarChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
         </div>
-        <button mat-button mat-raised-button class="btn btn-4 btn-block mx-auto w-25" (click)="randomize()">Aleatorio</button>
+        <button class="btn btn-4 btn-block mx-auto w-25" (click)="randomize()">Aleatorio</button>
     </div>
 </div>

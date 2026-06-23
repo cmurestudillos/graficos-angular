@@ -1,0 +1,7 @@
+packages:
+  - '.'
+
+onlyBuiltDependencies:
+  - '@angular/cli'
+  - core-js
+  - esbuild
